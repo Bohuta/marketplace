@@ -6,7 +6,7 @@ import {Header} from '../../components';
 import {routes}from'../router';
 import Login from '../Login/Login';
 import Register from'../Register/Register';
-import Api from '../../api';
+import Api from '../../Api';
 
 function Auth(){
   return(

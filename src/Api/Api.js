@@ -1,4 +1,6 @@
-export const Auth={
+// import Api from ".";
+
+export  const Auth={
   _token:null,
 
   get isLoggedIn(){
@@ -23,7 +25,7 @@ init(){
 
 logout(){
   try{
-    window.localStorage.removeItem('token',this._token);
+    window.localStorage.removeItem('token',JSON.stringify(this._token));
   }
   catch(err){
     console.error(err);
@@ -45,3 +47,5 @@ logout(){
 export function init(){
   Auth.init();
 }
+
+//export default Api;
